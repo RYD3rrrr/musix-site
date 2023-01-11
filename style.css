@@ -33,6 +33,7 @@ a {
 	position: relative;
 	width: 50px;
 	margin: 0 20px;
+	border-radius: 50%;
 }
 #title {
 	font-weight: 600;
@@ -56,7 +57,7 @@ a {
 	width: 100%;
 	height: calc(100vh - 72px);
 }
-#main #background {
+#background {
 	position: absolute;
 	top: 100px;
 	height: 100%;
@@ -67,8 +68,19 @@ a {
 	align-items: center;
 	justify-content: center;
 
-	filter: blur(10px);
+	filter: blur(10px) saturate(2);
+
+	animation: rotate 10s infinite linear;
 }
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 #fullLogo {
 	width: 120%;
 }
@@ -103,7 +115,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 70px;
+	padding-bottom: 90px;
 }
 .command {
 	width: 500px;
