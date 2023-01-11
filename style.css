@@ -44,7 +44,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(10, 10, 10, 0.7);
+	background-color: rgba(10, 10, 10, 0.5);
 
 	overflow-x: hidden;
 }
@@ -67,7 +67,7 @@ a {
 	align-items: center;
 	justify-content: center;
 
-	filter: blur(10px);
+	filter: blur(15px);
 }
 #fullLogo {
 	width: 120%;
